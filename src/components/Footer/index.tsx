@@ -11,9 +11,11 @@ export const Footer=()=>{
               
                <div className="links">
                      <p> Acesse nossas redes sociais:</p>
+                        <div className="links-itens">
                         <a href=" "><img src={InstaImage} alt="" /></a>
                         <a href=""><img src={ZapImage} alt="" /></a>
                         <a href=""><img src={LinkImage} alt="" /></a>
+                        </div>
                </div>
            </div>
 

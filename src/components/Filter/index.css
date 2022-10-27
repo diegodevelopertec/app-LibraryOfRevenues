@@ -1,0 +1,31 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: orange;
+    padding: 15px;
+    width: 300px;
+    background-color: #33312c;
+    height: max-content;
+    border-radius: 3px;
+}
+.container select{
+    margin-top: 10px;
+   border:none;
+   outline: 2px solid orange;
+   border-radius: 5px;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 15px;
+}
+select option{
+    padding: 10px 5px;
+}
+
+
+option:hover{
+    color: white;
+    background-color: orange;
+}
+
+

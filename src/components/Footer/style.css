@@ -22,3 +22,9 @@
     width: 50px;
     margin: 5px;
 }
+
+@media screen  and (max-width:950px){
+    .links{
+      flex-direction: column;
+    }
+}
