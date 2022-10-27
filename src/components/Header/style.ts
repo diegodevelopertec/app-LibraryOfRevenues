@@ -11,18 +11,24 @@ export const Containerheader=styled.header<Props>`
     justify-content: space-around;
     align-items: center;
     padding: 12px 5px ;
-    background-color:#c0c1c2;
-
-    nav{
+    background-color:#42413e;
+    padding: 19px 0;
+    
+    .logo a {
+        color: orange;
+        font-size: 24px;
+    }
+    .nav{
         display:flex;
     }
     .nav a {
     padding: 0 6px;
     color: #7a7c80;
+     &:hover{
+        color: orange;
+     }
 }
-.nav a:hover {
-    color:#5c5f63;
-}
+
 
 .btn-mobile{
     display: flex;
@@ -42,6 +48,8 @@ export const Containerheader=styled.header<Props>`
  
  justify-content: space-between;
  padding: 12px 5px ;
+
+
     .navbar{
         position: relative;
         right: 0;

@@ -1,7 +1,7 @@
 import * as S from './style'
 import {Link} from 'react-router-dom'
 import MenuIcon from '../../assets/icons/menuHamburguer.png'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 
 
@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react'
 export const Header=()=>{
 
     const [MenuMobile,setMenuMobile]=useState(false)
-
+    const [logged,setIslogged]=useState(true)
 
     const clickMobile=()=>{
         !MenuMobile ? setMenuMobile(true) : setMenuMobile(false)
@@ -32,9 +32,17 @@ export const Header=()=>{
                 </button>
                 
                 <div className="nav">
-                    <Link to='/' onClick={clickLink}>Menu</Link>
-                    <Link to='/' onClick={clickLink}>inicio</Link>
-                    <Link to='/' onClick={clickLink}>Meio</Link>
+                    {logged && <>
+                        <Link to='/receitas' onClick={clickLink}>Receitas</Link>
+                       <Link to='/conta' onClick={clickLink}>Criar receita</Link>
+                       <Link to='/criar' onClick={clickLink}> Minha Conta</Link>
+                    
+                    </>}
+                    {!logged && <>
+                        <Link to='/login' onClick={clickLink}>Login</Link>
+                        <Link to='/registro' onClick={clickLink}>Registro</Link>
+                      
+                    </>}
                 </div>
         </div>
 
