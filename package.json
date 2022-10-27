@@ -1,0 +1,31 @@
+{
+  "name": "app-libraryofrevenues",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.26",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "react-router-dom": "^6.4.2",
+    "styled-components": "^5.3.6",
+    "tailwindcss": "^3.2.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.0"
+  }
+}
