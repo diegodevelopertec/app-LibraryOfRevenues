@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 
-export const ContainerLogin=styled.div`
+export const ContainerRegistro=styled.div`
 background-color: #d4cc3b;
 display: flex;
 justify-content: center;
@@ -96,6 +96,7 @@ p{
         &::placeholder{
             color: #7a7a7a;
         }
+        
     }
     .submit{
         background-color: #0b8c25;
@@ -103,13 +104,6 @@ p{
             transition:all ease 2s;
             cursor: pointer;
             background-color: #0d7522;
-        }
-    }
-
-    .cx-radio{
-        display: flex;
-        .link{
-            color: #eeee;
         }
     }
 }

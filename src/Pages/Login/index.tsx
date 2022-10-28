@@ -1,5 +1,6 @@
 import * as S from './style'
 import cozinheiraImage from '../../assets/imgs/cozinheiralogin.png'
+import { Link } from 'react-router-dom'
 
 export const Login=()=>{
     return <>
@@ -11,10 +12,13 @@ export const Login=()=>{
                 <h3>Login</h3>
                 <p>Preencha com seus dados para entrar : </p>
                 <div className="cx-inputs">
-                    <input type="text" />
-                    <input type="email" />
-                    <input type="password" />
+                    <input type="email" placeholder='Digite seu Email' />
+                    <input type="password" placeholder='Digite sua senha' />
                     <input type="submit" className='submit' value='Entrar' />
+                </div>
+                <div className="cx-radio">
+                        <p>Não tem conta ?<Link to='/registro' className='link'>clique aqui</Link></p>
+                        
                 </div>
 
 
