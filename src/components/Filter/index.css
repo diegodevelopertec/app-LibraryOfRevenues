@@ -8,6 +8,7 @@
     background-color: #33312c;
     height: max-content;
     border-radius: 3px;
+    box-shadow: 0 0 6px #aaa;
 }
 .container select{
     margin-top: 10px;

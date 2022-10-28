@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container=styled.div`
 background-color: #c49c2d;
-height: 100vh;
+
 
 
 
@@ -37,13 +37,15 @@ export const ContainerFilter=styled.div`
  
 `
 export const ContainerRevenues=styled.div`
-flex:1;
+flex: 1;
 display: flex;
-justify-content: center;
 padding: 15px 5px;
+flex-wrap: wrap;
 .receitas{
-    background-color: red;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding: 50px 0px ;
+    padding: 50px 5px ;
 }
 `
