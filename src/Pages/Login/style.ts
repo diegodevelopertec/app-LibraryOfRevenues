@@ -67,6 +67,14 @@ padding: 70px 0;
 color: #a8a11e;
 box-shadow: 0 0 5px #eee;
 
+a{
+    color: #eeee;
+    padding-left: 5px;
+    &:hover{
+        text-decoration: underline;
+        color:#32a852;
+    }
+}
 h3{
     padding-left: 100px;
     font-size: 25px;
@@ -106,15 +114,14 @@ p{
         }
     }
 
-    .cx-radio{
-        display: flex;
-        .link{
-            color: #eeee;
-        }
-    }
+   
 }
 
 @media screen  and (max-width:950px){
     width: 90%;
+   h3{
+    text-align: center;
+    padding-left: 0;
+   }
 }
 `

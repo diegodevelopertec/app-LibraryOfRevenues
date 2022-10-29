@@ -67,6 +67,6 @@ padding: 15px 0;
 color: #b6bfb8;
 display: flex;
 justify-content: space-around;
-
+font-size: 11px;
 
 `

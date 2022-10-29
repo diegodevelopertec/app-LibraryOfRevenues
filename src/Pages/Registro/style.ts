@@ -110,5 +110,9 @@ p{
 
 @media screen  and (max-width:950px){
     width: 90%;
+    h3{
+        padding-left: 0;
+        text-align: center;
+    }
 }
 `

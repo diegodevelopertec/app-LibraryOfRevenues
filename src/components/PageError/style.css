@@ -1,0 +1,13 @@
+
+.error{
+display: flex;
+justify-content:center;
+background-color: center;
+min-height: 100vh;
+background-color: #c49c2d;
+}
+.error div{
+    display: flex;
+    justify-content:center;
+    background-color: center;
+}
