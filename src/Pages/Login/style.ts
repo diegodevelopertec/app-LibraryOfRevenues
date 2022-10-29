@@ -106,11 +106,16 @@ p{
         }
     }
     .submit{
-        background-color: #0b8c25;
+        &:focus{
+            transition:all ease 3s;
+            outline: 0;
+        }
+        background-color: #0d7522;
         &:hover{
-            transition:all ease 2s;
+            transition:all ease 1s;
             cursor: pointer;
-            background-color: #0d7522;
+            background-color: #0b8c25;
+           
         }
     }
 

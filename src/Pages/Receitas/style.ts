@@ -3,11 +3,6 @@ import styled from "styled-components";
 export const Container=styled.div`
 background-color: #c49c2d;
 
-
-
-
-
-
 `
 export const ContainerDivision=styled.div`
     display: flex;
@@ -24,7 +19,7 @@ export const ContainerFilter=styled.div`
     justify-content: center;
     width: 20%;
     padding-top: 30px;
-
+    padding-right: 15px;
 
 
     @media screen and (max-width:950px){
@@ -46,6 +41,6 @@ flex-wrap: wrap;
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 50px 5px ;
+    padding: 18px 5px ;
 }
 `

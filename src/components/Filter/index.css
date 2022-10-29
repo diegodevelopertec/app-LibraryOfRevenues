@@ -1,5 +1,6 @@
 
 .container{
+  
     display: flex;
     flex-direction: column;
     color: orange;
@@ -9,8 +10,13 @@
     height: max-content;
     border-radius: 3px;
     box-shadow: 0 0 6px #aaa;
+    position: fixed;
+    top: 100px;
+    left:40px;
+ 
 }
 .container select{
+    
     margin-top: 10px;
    border:none;
    outline: 2px solid orange;
@@ -30,3 +36,8 @@ option:hover{
 }
 
 
+@media screen and (max-width:950px){
+    .container{
+        position: static;
+    }
+}

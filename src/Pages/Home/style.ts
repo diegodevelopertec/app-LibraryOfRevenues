@@ -51,8 +51,7 @@ div{
 export const ContainerEntrada=styled.div`
     width:100%;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 100px 0;
     justify-content:center;
     align-items: center;
 
