@@ -35,7 +35,8 @@ export const Header=()=>{
                     {logged && <>
                         <Link to='/receitas' onClick={clickLink}>Receitas</Link>
                        <Link  to='/addreceita'  onClick={clickLink} >Criar receita</Link>
-                       <Link to='/useradmin' onClick={clickLink}> Minha Conta</Link>
+                       <Link to='/myreceitas' onClick={clickLink}> Minhas receitas</Link>
+                       <Link to='/myconta' onClick={clickLink}> Minha conta</Link>
                     
                     </>}
                     {!logged && <>

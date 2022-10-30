@@ -6,8 +6,8 @@ import { Login } from './Pages/Login';
 import { Registro } from './Pages/Registro';
 import { PageError } from './components/PageError';
 import { AddReceita } from './Pages/AddReceita';
-import { ContaPage } from './Pages/PageContaUser';
-
+import { ContaUser } from './Pages/ContaUser';
+import {UserReceitas} from './Pages/UserReceitas'
 
 export const RoutesList=()=>{
     return <Routes>
@@ -17,7 +17,8 @@ export const RoutesList=()=>{
         <Route path='/receitas' element={<Receitas/>} />
         <Route path='/receitas/:id' element={<Receita/>} />
         <Route path='/addreceita' element={<AddReceita/>} />
-        <Route path='/useradmin' element={<ContaPage/>} />
+        <Route path='/myreceitas' element={<UserReceitas/>} />
+        <Route path='/myconta' element={<ContaUser/>} />
         <Route  path='*' element={<PageError />}/>
     </Routes>
 }
