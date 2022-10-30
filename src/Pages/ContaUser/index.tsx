@@ -24,13 +24,13 @@ return <S.Container>
         <div className="cx-inputs">
            
             <div>
-                <input type="text" value={'Diego'} disabled={inputDisable} />
+                <input type="text" defaultValue={'Diego'} disabled={inputDisable} />
             </div>
             <div>
-                <input type="email" value={'diego@gmail.com'} disabled={inputDisable} />
+                <input type="email" defaultValue={'diego@gmail.com'} disabled={inputDisable} />
             </div>
             <div>
-                <input type="password" value={'ssssss'} disabled={inputDisable} />
+                <input type="password" defaultValue={'ssssss'} disabled={inputDisable} />
             </div>
             <button onClick={clickAlterarData}>
                  {inputDisable  ? ' alterar' : 'salvar'}

@@ -7,7 +7,6 @@ justify-content: center;
 align-items: center;
 min-height: 100vh;
 padding: 60px 0px;
-background-color: #4b4d4b;
 background-color: #c49c2d;
 .container-conta{
     padding: 0 30px;
@@ -50,12 +49,12 @@ background-color: #c49c2d;
             font-size: 16px;
             width: 100%;
             color: #c49c2d;
-            outline: 0;
+           outline:0;
             &:disabled{
                 color:  #a3a3a3;
             }
             &:focus{
-              border: 2px solid orange;
+             border: 2px solid orange;
             }
         }
         button{
