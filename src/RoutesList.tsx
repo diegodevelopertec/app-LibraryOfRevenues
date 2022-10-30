@@ -5,7 +5,7 @@ import { Receitas } from './Pages/Receitas';
 import { Login } from './Pages/Login';
 import { Registro } from './Pages/Registro';
 import { PageError } from './components/PageError';
-
+import { AddReceita } from './Pages/AddReceita';
 
 export const RoutesList=()=>{
     return <Routes>
@@ -14,6 +14,7 @@ export const RoutesList=()=>{
         <Route path='/registro' element={<Registro/>} />
         <Route path='/receitas' element={<Receitas/>} />
         <Route path='/receitas/:id' element={<Receita/>} />
+        <Route path='/receitas/addreceita' element={<AddReceita/>} />
         <Route  path='*' element={<PageError />}/>
     </Routes>
 }

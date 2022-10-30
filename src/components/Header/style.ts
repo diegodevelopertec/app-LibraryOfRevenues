@@ -17,6 +17,7 @@ export const Containerheader=styled.header<Props>`
     .logo a {
         color: orange;
         font-size: 24px;
+        font-size: 18px;
     }
     .nav{
         display:flex;
@@ -37,6 +38,7 @@ export const Containerheader=styled.header<Props>`
     padding: 5px;
     border: none;
     display: none;
+   
 }
 .img-mobile{
     height: 30px;
@@ -50,11 +52,10 @@ export const Containerheader=styled.header<Props>`
  padding: 12px 5px ;
 
 
-    .navbar{
-        position: relative;
-        right: 0;
-       
-    }
+  .nav{
+    top: 23px;
+        position: absolute;
+  }
 
  .btn-mobile{
      display: flex;
@@ -63,18 +64,21 @@ export const Containerheader=styled.header<Props>`
  .nav{
     transition: all ease 3s;
      display:${props=>props.visible === true ? 'flex' : 'none'};
-     margin-top: 10px;
+     margin-top: 15px;
      flex-direction: column;
-     position: relative;
-     right: 0;
+     position: absolute;
+     right: 30px;
      padding: 5px;
     flex-direction: column;
     border: 2px solid #4c4d4f;
-  
+    background-color: #222422;
+    padding: 5px;
+    border-radius: 5px;
 
  
  }
  .nav a {
+    color: orange;
      padding: 10px 30px;
  }
 }
