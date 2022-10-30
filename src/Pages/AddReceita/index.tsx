@@ -7,7 +7,7 @@ export const AddReceita=()=>{
 
 
 const cancelRevenue=()=> navigate(-1)
-    
+
     return <>
     <S.Container>
         <div className="container-form">
@@ -23,7 +23,7 @@ const cancelRevenue=()=> navigate(-1)
             </div>
             <div className="cx-btns">
                 <Link to='' onClick={cancelRevenue} className='btn-cancel'>cancelar</Link>
-                <Link to='' type='submit' className='btn-save'>salvar</Link>
+                <Link to='/receitas' type='submit' className='btn-save'>salvar</Link>
             </div>
 
 

@@ -46,7 +46,7 @@ export const Home=()=>{
          <div>
             <S.ContainerEntrada>
                
-                <Link to={isLogged ? '/receitas' : '/'}>quero ver receitas</Link>
+                <Link to={isLogged ? '/receitas' : '/login'}>quero ver receitas</Link>
                 <img src={MorenaImage} alt=""  />
                 
             </S.ContainerEntrada>

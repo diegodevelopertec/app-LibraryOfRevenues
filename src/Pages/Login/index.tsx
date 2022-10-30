@@ -1,8 +1,16 @@
 import * as S from './style'
 import cozinheiraImage from '../../assets/imgs/cozinheiralogin.png'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
+import { ChangeEvent } from 'react'
 
 export const Login=()=>{
+    const navigate=useNavigate()
+    const clickSubmit=(e:any)=>{
+        e.preventDefault()
+        navigate('/receitas')
+
+
+    }
     return <>
     <S.ContainerLogin>
         <S.Container>
@@ -14,7 +22,7 @@ export const Login=()=>{
                 <div className="cx-inputs">
                     <input type="email" placeholder='Digite seu Email' />
                     <input type="password" placeholder='Digite sua senha' />
-                    <input type="submit" className='submit' value='Entrar' />
+                    <input type="submit" className='submit' value='Entrar' onClick={clickSubmit}/>
                 </div>
                 <div className="cx-radio">
                         <p>Não tem conta ?<Link to='/registro' className='link'>clique aqui</Link></p>
