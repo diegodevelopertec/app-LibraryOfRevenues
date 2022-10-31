@@ -16,6 +16,7 @@ export const RoutesList=()=>{
         <Route path='/registro' element={<Registro/>} />
         <Route path='/receitas' element={<Receitas/>} />
         <Route path='/receitas/:id' element={<Receita/>} />
+        <Route path='/receitas/user/:id' element={<Receita/>} />
         <Route path='/addreceita' element={<AddReceita/>} />
         <Route path='/myreceitas' element={<UserReceitas/>} />
         <Route path='/myconta' element={<ContaUser/>} />

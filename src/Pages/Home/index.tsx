@@ -16,7 +16,7 @@ export const Home=()=>{
          <div className='topo'>
          <Banner
            title='Chegou a hora de Alavancar seus conhecimentos na Cozinha!'
-            text='
+            text={`
                 Que tal aprender novas receitas e ao mesmo tempo se divertir com nooovos sabores
                 Aqui na ReceitasOn voçê pode 
                 aprender novas receitas e ainda poder compartilhar com outros as que voçê sabe
@@ -26,8 +26,14 @@ export const Home=()=>{
                 The point of using Lorem Ipsum is that it has a more-or-less normal
                 distribution of letters, as opposed to using 
                 making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for  ometimes on purpose 
-            '
+                Que tal aprender novas receitas e ao mesmo tempo se divertir com nooovos sabores
+                Aqui na ReceitasOn voçê pode 
+                aprender novas receitas e ainda poder compartilhar com outros as que voçê sabe
+                Why do we use it?
+                
+                `}
             image={imageBanner} />
+           
          </div>
         <S.containerMeio>
             <div>

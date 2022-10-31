@@ -1,20 +1,16 @@
 import * as S from './styled'
 import {receitasData} from '../../data/data'
 import BuscaIcon from '../../assets/icons/busca.png'
-
+import { Link } from 'react-router-dom'
 
 export const UserReceitas=()=>{
     return <S.Container>
         <S.ContainerList>
             <div className="cx-search">
-            
-               
                    <div>
-                   <input type="search" placeholder='Pesquise por uma receita..'  />
-                    <img src={BuscaIcon} />
+                        <input type="search" placeholder='Pesquise por uma receita..'  />
+                       <img src={BuscaIcon} />
                    </div>
-                
-            
             </div>
             <div className='cx-list'>
             {receitasData.map((item,index)=>(
@@ -23,8 +19,9 @@ export const UserReceitas=()=>{
                     <p>{item.name}</p>
                 </div>
                 <div className="cx-actions">
-                    <button> ver </button>
-                    <button>deletar</button>
+                    <Link to={'/receitas/user/:id'}><button> ver </button></Link>
+                    <Link to={''}><button> deletar </button></Link>
+                   
                 </div>
                 </div>
             ))}

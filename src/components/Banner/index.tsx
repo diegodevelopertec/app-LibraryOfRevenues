@@ -3,9 +3,9 @@ import * as S from './styled'
 
 
 type Props={
-    image:string,
+    image?:string,
     text:string,
-    title:string
+    title?:string
 }
 export const Banner=({image,text,title}:Props)=>{
     return <>

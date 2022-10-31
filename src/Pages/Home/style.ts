@@ -11,9 +11,7 @@ export const Container=styled.div`
     width:90vw;
 
     @media screen  and (max-width:950px){
-        width: 100vw;
-      
-        
+        width: 100vw;  
     }
 
 `
@@ -41,7 +39,6 @@ div{
 
 @media screen  and (max-width:950px){
         width: 100vw;
-      
         div{
             font-size: 18px;
         }

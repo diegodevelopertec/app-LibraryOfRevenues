@@ -4,17 +4,15 @@ export const Container=styled.div`
     display: flex;
     background-color: #d9aa29;
     width: 100%;
-    height: 370px;
   
     
 
 
 
-@media screen and (max-width:920px){
+@media screen and (max-width:950px){
     flex-direction: column;
-    min-height: 500px;
     width: 100vw;
-   padding: 10px;
+   padding: 30px 10px;
 }
 `
 
@@ -33,11 +31,14 @@ p{
 }
 
 
-@media screen and (max-width:920px){
+@media screen and (max-width:950px){
     width: 100%;
     padding-top:5px;
     padding-left: 5px;
     font-size: 12px;
+    h3{
+        font-size: 20px;
+    }
 }
 `
 export const ContainerImage=styled.div`
@@ -51,20 +52,20 @@ img{
 
 }
 
-@media screen and (max-width:920px){
+@media screen and (max-width:950px){
     flex-direction: column;
-   padding-top: 20px;
-   padding-bottom: 20px;
     width: 100%;
     height: auto;
    justify-content: center;
    align-items: center;
+   display: none;
     img{
         width: 300px;
         min-height: 140px;
         min-width: 80px;
-        height: 300px;
+        height: 200px;
         border-radius:100%;
+        
      }
 }
 `

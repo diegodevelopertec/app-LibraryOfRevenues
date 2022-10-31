@@ -44,7 +44,8 @@ export const ContainerCapa=styled.div<Prop>`
 .image{
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(${props=>props.backgroundImage ? `./${props.backgroundImage}` : ''});
+    height: 200px;
+    background-image: url(./${props=>props.backgroundImage ? `./${props.backgroundImage}` : null});
 }
 
 
