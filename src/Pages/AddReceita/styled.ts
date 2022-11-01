@@ -56,6 +56,35 @@ box-shadow:  0 0 10px #aaa;
       background-color: white;
     }
 
+    .input-categorys{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        color: white;
+         span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin: 0 10px;
+           input{
+              height: 30px;
+              width: 30px;
+              margin-right: 5px;
+           }
+         }
+         @media screen  and (max-width:340px){
+                align-items: center;
+                justify-content:auto;
+               flex-direction: column;
+               input{
+                 height: 30px;
+                 width: 30px;
+             
+           }
+         }
+
+     
+    }
     textarea{
         border: 0;
         border-radius: 3px;

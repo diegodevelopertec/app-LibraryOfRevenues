@@ -49,9 +49,12 @@ export const ContainerList=styled.div`
         font-size: 15px;
         
     }
-    @media screen and (max-width:950px) {
+    @media screen and (max-width:700px) {
+     div{
+        width: 100%;
+     }
         input{
-             width:70%;
+             padding: 12px;
            }
     }
 }
