@@ -5,7 +5,7 @@ type Props={
 }
 
 export const Containerheader=styled.header<Props>`
-   
+  
     width: 100%;
     display: flex;
     justify-content: space-around;

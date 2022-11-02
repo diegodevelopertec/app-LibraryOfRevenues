@@ -44,9 +44,21 @@ export const Login=()=>{
                 <h3>Login</h3>
                 <p>Preencha com seus dados para entrar : </p>
                 <div className="cx-inputs">
-                    <input type="email" placeholder='Digite seu Email' name={email} onChange={actionsForm.changeEmail} />
-                    <input type="password" placeholder='Digite sua senha' name={password} onChange={actionsForm.changePassword} />
-                    <input type="submit" className='submit' value='Entrar' onClick={clickSubmit}/>
+                    <input type="email" 
+                       placeholder='Digite seu Email' 
+                       value={email} 
+                       onChange={actionsForm.changeEmail} 
+                    />
+                    <input type="password" 
+                        placeholder='Digite sua senha' 
+                        name={password} 
+                        onChange={actionsForm.changePassword} 
+                    />
+                    <input type="submit" 
+                      className='submit' 
+                      value='Entrar' 
+                      onClick={clickSubmit}
+                    />
                 </div>
                {errorDisplay &&  <ErrorMensage  text='Todos os campos devem ser preenchidos'/> }
 

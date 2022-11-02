@@ -6,6 +6,9 @@
     background-color: #3d3e40;
     padding: 30px 0;
     color: #c49c2d;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .links{

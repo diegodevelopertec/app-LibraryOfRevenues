@@ -7,6 +7,7 @@ background-color: #d4cc3b;
 display: flex;
 justify-content: center;
 padding:100px 0 ;
+height: 100%;
 `
 
 export const Container=styled.div`

@@ -14,7 +14,7 @@ export const UserReceitas=()=>{
             </div>
             <div className='cx-list'>
             {receitasData.map((item,index)=>(
-                <div className="card-receita">
+                <div key={index} className="card-receita">
                 <div className="name-receita">
                     <p>{item.name}</p>
                 </div>
