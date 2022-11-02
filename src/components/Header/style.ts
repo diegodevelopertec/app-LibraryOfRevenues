@@ -54,7 +54,7 @@ export const Containerheader=styled.header<Props>`
 
   .nav{
     top: 23px;
-        position: absolute;
+    position: absolute;
   }
 
  .btn-mobile{
@@ -69,11 +69,11 @@ export const Containerheader=styled.header<Props>`
      position: absolute;
      right: 30px;
      padding: 5px;
-    flex-direction: column;
-    border: 2px solid #4c4d4f;
-    background-color: #222422;
-    padding: 5px;
-    border-radius: 5px;
+     flex-direction: column;
+     border: 2px solid #4c4d4f;
+     background-color: #222422;
+     padding: 5px;
+     border-radius: 5px;
 
  
  }

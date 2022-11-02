@@ -8,8 +8,7 @@ export const Container=styled.div`
    display: flex;  
    flex-direction: column;
    width: 300px;
-  border-radius: 3px;
-
+   border-radius: 3px;
 
   .cx-btn  {
     display: flex;
@@ -28,9 +27,7 @@ export const Container=styled.div`
             background-color:orange;
             color: #000;
             font-weight: bold;
-            
-
-        }
+         }
     }
   }
 `
@@ -45,29 +42,24 @@ export const ContainerCapa=styled.div<Prop>`
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
-    background-image: url(./${props=>props.backgroundImage ? `/${props.backgroundImage}` : null});
+    background-image: url(${props=>props.backgroundImage ? `${props.backgroundImage}` : null});
 }
-
-
-
 `
 
 export const ContainerDesc=styled.div`
+    padding:10px 5px;
+    color:#ba8a0f;
 
-padding:10px 5px;
-color:#ba8a0f;
-
-.namecard{
-    margin: 15px 0;
-}
+    .namecard{
+        margin: 15px 0;
+    }
 
 `
 
 export const CardFooter=styled.div`
-padding: 15px 0;
-color: #b6bfb8;
-display: flex;
-justify-content: space-around;
-font-size: 11px;
-
+    padding: 15px 0;
+    color: #b6bfb8;
+    display: flex;
+    justify-content: space-around;
+    font-size: 11px;
 `

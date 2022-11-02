@@ -5,30 +5,26 @@ export const Container=styled.div`
     background-color: #d9aa29;
     width: 100%;
   
-    
-
-
-
-@media screen and (max-width:950px){
-    flex-direction: column;
-    width: 100vw;
-   padding: 30px 10px;
-}
+    @media screen and (max-width:950px){
+        flex-direction: column;
+        width: 100vw;
+    padding: 30px 10px;
+    }
 `
 
 export const ContainerDesc=styled.div`
-     width: 70%;
+    width: 70%;
     padding-top:30px;
     padding-left: 20px;
     padding-right: 10px;
 
-h3{
-    font-size: 25px;
-}
+    h3{
+        font-size: 25px;
+    }
 
-p{
-    margin-top: 30px;
-}
+    p{
+        margin-top: 30px;
+    }
 
 
 @media screen and (max-width:950px){
@@ -45,27 +41,21 @@ export const ContainerImage=styled.div`
     overflow: hidden;
     display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;
 
-img{
-
-}
-
-@media screen and (max-width:950px){
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-   justify-content: center;
-   align-items: center;
-   display: none;
-    img{
-        width: 300px;
-        min-height: 140px;
-        min-width: 80px;
-        height: 200px;
-        border-radius:100%;
-        
-     }
-}
+    @media screen and (max-width:950px){
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        img{
+            width: 300px;
+            min-height: 140px;
+            min-width: 80px;
+            height: 200px;
+            border-radius:100%;
+            
+        }
+    }
 `

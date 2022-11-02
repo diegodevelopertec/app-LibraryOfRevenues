@@ -7,5 +7,5 @@ export const Body=styled.div`
 
 export const Main=styled.main`
     background-color: #dedede;
-  
+    height: 100%;
 `

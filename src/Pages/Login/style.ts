@@ -3,36 +3,43 @@ import styled from "styled-components";
 
 
 export const ContainerLogin=styled.div`
-background-color: #d4cc3b;
-display: flex;
-justify-content: center;
-padding:100px 0 ;
+    background-color: #d4cc3b;
+    display: flex;
+    justify-content: center;
+    padding:100px 0 ;
+    height: 100%;
 `
 
 export const Container=styled.div`
 width: 80vw;
+height: 100vh;
 display: flex;
 
     @media screen  and (max-width:950px){
         width: 100vw;
         padding: 0 5px;
+       justify-content: center;
+       align-items: center;
     }
 `
 
 export const ContainerDivision=styled.div`
-    height: 100%;
+
     display: flex;
     width: 100%;
+    align-items:center;
     
 .cx-form{
     width: 70%;
+
 }
 .cx-image{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
- height: 100%;
+  
     img{
         height: 300px;
     }
@@ -53,7 +60,7 @@ export const ContainerDivision=styled.div`
      .cx-form{
         display: flex;
         justify-content: center;
-       width: 100vw;
+        width: 100vw;
       
 }
 }
@@ -63,10 +70,10 @@ export const ContainerDivision=styled.div`
 export const Form=styled.form`
 background-color: #383835;
 border-radius: 13px;
-padding: 70px 0;
+padding: 50px 0;
 color: #a8a11e;
 box-shadow: 0 0 5px #eee;
-
+overflow: hidden;
 a{
     color: #eeee;
     padding-left: 5px;

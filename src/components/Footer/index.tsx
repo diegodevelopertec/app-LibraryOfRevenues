@@ -8,7 +8,6 @@ export const Footer=()=>{
     return <footer className='footer' >
         <div>
            <div className="redes">
-              
                <div className="links">
                      <p> Acesse nossas redes sociais:</p>
                         <div className="links-itens">

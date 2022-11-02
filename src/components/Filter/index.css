@@ -18,22 +18,22 @@
 .container select{
     
     margin-top: 10px;
-   border:none;
-   outline: 2px solid orange;
-   border-radius: 5px;
+    border:none;
+    outline: 2px solid orange;
+    border-radius: 5px;
     padding: 10px;
     background-color: #eee;
     font-size: 15px;
 }
-select option{
-    padding: 10px 5px;
-}
 
+select option{
+        padding: 10px 5px;
+}
 
 option:hover{
-    color: white;
-    background-color: orange;
-}
+        color: white;
+        background-color: orange;
+    }
 
 
 @media screen and (max-width:950px){

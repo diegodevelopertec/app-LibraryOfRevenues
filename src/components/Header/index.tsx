@@ -4,9 +4,6 @@ import MenuIcon from '../../assets/icons/menuHamburguer.png'
 import { useState } from 'react'
 
 
-
-
-
 export const Header=()=>{
 
     const [MenuMobile,setMenuMobile]=useState(false)
