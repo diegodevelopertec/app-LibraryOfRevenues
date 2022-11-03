@@ -22,7 +22,7 @@ const cancelRevenue=()=> navigate(-1)
                 <div className="input-categorys">
                    <span> <input type="radio" name="category" id=""  value='Doces' /> Doces</span>
                    <span> <input type="radio" name="category" id="" value='Pizza' />Pizza</span>
-                   <span> <input type="radio" name="category"value="Hamburgue"  /> Hamburgue</span>
+                   <span> <input type="radio" name="category"value="Hamburguer"  /> Hamburgue</span>
                    <span> <input type="radio" name="category" value="outros"  /> outros</span>
                 </div>
                 <textarea name="" id="" placeholder='Escreva a sua receita aqui ...'></textarea>
