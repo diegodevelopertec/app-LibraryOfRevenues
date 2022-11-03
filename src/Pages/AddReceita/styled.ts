@@ -40,13 +40,14 @@ box-shadow:  0 0 10px #aaa;
         border: 0;
         border-radius: 5px;
         padding: 15px;
-        margin: 14px 0;
+        margin: 14px 5px;
         outline: 0;
         font-size: 16px;
     }
 
     .input-file{
        input{
+        font-size: 11px;
             margin: 14px 0;
             padding: 15px;
            }

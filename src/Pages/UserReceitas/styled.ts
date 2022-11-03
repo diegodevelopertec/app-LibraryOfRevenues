@@ -72,6 +72,10 @@ export const ContainerList=styled.div`
         margin: 15px 0px;
         padding: 20px 10px;
         border-radius: 3px;
+        box-shadow:  0 0 5px #eee;
+        &:hover{
+           background-color: #050608;
+        }
         button{
             padding: 13px 5px;
             width: 90px;
@@ -81,6 +85,7 @@ export const ContainerList=styled.div`
             color: white;
             border-radius: 3px;
             &:hover{
+                cursor: pointer;
                 background-color: #219150;
             }
         }

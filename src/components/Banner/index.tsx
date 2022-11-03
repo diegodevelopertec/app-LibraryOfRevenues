@@ -11,9 +11,9 @@ export const Banner=({image,text,title}:Props)=>{
             <S.Container>
                 <S.ContainerDesc>
                 <div>
-                <h3>{title}</h3>
-                    <p> {text} </p>
-                </div>
+                    <h3>{title}</h3>
+                        <p> {text} </p>
+                    </div>
                 </S.ContainerDesc>
                 <S.ContainerImage>
                     <img src={image} alt="" />

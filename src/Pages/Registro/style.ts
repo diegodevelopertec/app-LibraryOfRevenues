@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 
 export const ContainerRegistro=styled.div`
-background-color: #d4cc3b;
+//background-color: #d4cc3b;
+background-color: #d9aa29;
 display: flex;
 justify-content: center;
 padding:100px 0 ;
