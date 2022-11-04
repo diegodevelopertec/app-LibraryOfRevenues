@@ -14,9 +14,7 @@ export const Receitas=()=>{
             </S.ContainerFilter>
             <S.ContainerRevenues>
                 <div className="receitas">
-                 
-                  <Card data={receitasData}/>
-                 
+                   <Card data={receitasData}/>
                 </div>
             </S.ContainerRevenues>
         </S.ContainerDivision>
