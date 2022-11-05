@@ -11,7 +11,9 @@ export const Card=({data}:Prop)=>{
       {data.map((i,k)=>(
             <S.Container  key={k}>
                   <S.ContainerCapa id={i.id} backgroundImage={i.image}>
-                     <div className="image" > </div>
+                     <div className="image" >
+                        <img src={i.image} alt="" />
+                     </div>
                   </S.ContainerCapa>
                
                   <S.ContainerDesc>
