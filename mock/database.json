@@ -1,0 +1,29 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"caio",
+            "password":"123",
+            "email": "caio@gamil.com"
+
+        },
+        {
+            "id":2,
+            "name":"ana",
+            "password":"123",
+            "email": "ana@gamil.com"
+
+        }
+
+    ],
+    "receitas":[
+        {
+            "id":1,
+            "idUser":2,
+            "title":"receita qualquer",
+            "desc":"uma receita de pizza muito saborosa",
+            "content":"decieghewehwwegwdvgwdddwbwdwdbdwtw wsywvsw6fwsvtwstfwsvtvws",
+            "image" :" "
+        }
+    ]
+}
