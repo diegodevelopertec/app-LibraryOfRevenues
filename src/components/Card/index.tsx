@@ -1,9 +1,9 @@
 import * as S from './style'
 import {Receitas} from '../../data/data'
 import {Link} from 'react-router-dom'
+import { RevenueType } from '../../Services/ApiReceitas'
 
-
-type Prop={ data:Receitas[]}
+type Prop={ data:RevenueType[]}
 
 
 export const Card=({data}:Prop)=>{
@@ -17,8 +17,8 @@ export const Card=({data}:Prop)=>{
                   </S.ContainerCapa>
                
                   <S.ContainerDesc>
-                     <p className='namecard'>{i.name}</p>
-                     <p>{i.desc}</p>
+                     <p className='namecard'>{i.title}</p>
+                     <p>{i.description}</p>
                   </S.ContainerDesc>
 
                   <S.CardFooter>
@@ -26,7 +26,7 @@ export const Card=({data}:Prop)=>{
                      <span>{i.author}</span>
                   </S.CardFooter>
                   <div className="cx-btn">
-                     <Link to='/receitas/:id'>ver receita</Link>
+                     <Link to='/receitas/:id'>ver</Link>
                   </div>
             </S.Container>
        ))}

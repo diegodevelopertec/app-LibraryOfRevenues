@@ -4,11 +4,13 @@ import styled from "styled-components";
 
 export const ContainerLogin=styled.div`
    // background-color: #d4cc3b;
-   background-color: #d9aa29;
+    background-color: #d9aa29;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding:100px 0 ;
-    height: 100%;
+    height: 100vh;
+
 `
 
 export const Container=styled.div`
@@ -86,6 +88,9 @@ a{
 h3{
     padding-left: 100px;
     font-size: 25px;
+}
+.msg-error{
+    margin:2px 0;
 }
 p{
     margin: 30px 12px;

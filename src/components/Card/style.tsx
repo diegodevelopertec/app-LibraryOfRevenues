@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
+type Prop={
+    backgroundImage:string
+}
+
 export const Container=styled.div`
    background-color: #33312c;
    box-shadow: 0 0 6px #aaa;
-   padding: 15px ;
-   margin: 12px;
+   padding: 5px ;
+   margin: 5px;
    display: flex;  
    flex-direction: column;
-   width: 300px;
    border-radius: 3px;
 
   .cx-btn  {
@@ -21,7 +24,11 @@ export const Container=styled.div`
         padding: 13px;
         color :white;
         border-radius: 3px;
-
+        width:100px;
+        height:50px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
         &:hover{
             outline: 3px solid #000;
             background-color:orange;
@@ -32,9 +39,7 @@ export const Container=styled.div`
   }
 `
 
-type Prop={
-    backgroundImage:string
-}
+
 
 export const ContainerCapa=styled.div<Prop>`
 

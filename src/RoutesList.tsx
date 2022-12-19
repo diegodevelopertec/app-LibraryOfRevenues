@@ -1,7 +1,7 @@
 import {Routes,Route} from 'react-router-dom'
 import { Home } from "./Pages/Home";
 import { Receita } from './Pages/Receita';
-import { Receitas } from './Pages/Receitas';
+import { ListReceitas } from './Pages/ListReceitas';
 import { Login } from './Pages/Login';
 import { Registro } from './Pages/Registro';
 import { PageError } from './components/PageError';
@@ -14,7 +14,7 @@ export const RoutesList=()=>{
         <Route path='/' element={<Home/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/registro' element={<Registro/>} />
-        <Route path='/receitas' element={<Receitas/>} />
+        <Route path='/receitas' element={<ListReceitas/>} />
         <Route path='/receitas/:id' element={<Receita/>} />
         <Route path='/receitas/user/:id' element={<Receita/>} />
         <Route path='/addreceita' element={<AddReceita/>} />

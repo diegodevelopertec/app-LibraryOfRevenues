@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container=styled.div`
    background-color: #c49c2d;
-    min-height: 100vh;
     width: 100%;
-background-color: transparent;
-display: flex;
-justify-content:center;
-background-color: #c49c2d;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    background-color: #c49c2d;
     .container-form{
         padding:75px 15px;
         display: flex;
@@ -27,12 +27,11 @@ background-color: #c49c2d;
 
 `
 export const Form=styled.div`
-background-color: #363533;
-margin: 30px ;
-padding: 30px 35px;
-border-radius: 15px;
-width: 60%;
-box-shadow:  0 0 10px #aaa;
+    background-color: #363533;
+    padding: 30px 35px;
+    border-radius: 5px;
+    width: 60%;
+    box-shadow:  0 0 10px #aaa;
 
 .cx-inputs{
     display: flex;
@@ -82,7 +81,7 @@ box-shadow:  0 0 10px #aaa;
         padding: 15px 30px;
         border-radius: 3px;
         color: white;
-        margin:30px 15px;
+        margin:30px  15px;
         width: 170px;
         text-align: center;
     }

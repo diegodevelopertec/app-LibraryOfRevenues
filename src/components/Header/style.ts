@@ -15,7 +15,7 @@ export const Containerheader=styled.header<Props>`
     padding: 19px 0;
     
     .logo a {
-        color: orange;
+        color: #d9aa29;
         font-size: 24px;
         font-size: 18px;
     }
@@ -26,7 +26,7 @@ export const Containerheader=styled.header<Props>`
     padding: 0 6px;
     color: #7a7c80;
      &:hover{
-        color: orange;
+        color: #d9aa29;
      }
 }
 
@@ -55,6 +55,7 @@ export const Containerheader=styled.header<Props>`
   .nav{
     top: 23px;
     position: absolute;
+  
   }
 
  .btn-mobile{
@@ -64,22 +65,26 @@ export const Containerheader=styled.header<Props>`
  .nav{
     transition: all ease 3s;
      display:${props=>props.visible === true ? 'flex' : 'none'};
-     margin-top: 15px;
+     margin-top:56px;
      flex-direction: column;
      position: absolute;
-     right: 30px;
+     right: 0px;
      padding: 5px;
      flex-direction: column;
      border: 2px solid #4c4d4f;
      background-color: #222422;
      padding: 5px;
-     border-radius: 5px;
+     top: 0;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+     transition: all ease 0.5s;
 
  
  }
  .nav a {
-    color: orange;
+ 
      padding: 10px 30px;
+     color: #d9aa29;
  }
 }
 `

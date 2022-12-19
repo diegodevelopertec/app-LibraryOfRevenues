@@ -5,6 +5,16 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { ChangeEvent } from 'react'
 import { ErrorMensage } from '../../components/ErrorMensage'
+import { useForm, SubmitHandler } from "react-hook-form";
+import {yupResolver} from '@hookform/resolvers/yup'
+import * as yup from 'yup'
+
+
+type InputsType = {
+  name: string,
+  email: string,
+  password: string,
+};
 
 export const Registro=()=>{
   let [nameUser,setNameUser]=useState('')
@@ -12,35 +22,23 @@ export const Registro=()=>{
   let [password,setPassword]=useState('')
   let [errorDisplay,setErrorDisplay]=useState(false)
 
-const navigate=useNavigate()
 
-const actionsForm={
-  changeNameUser:(e:ChangeEvent<HTMLInputElement>)=>{
-    setNameUser(e.target.value)
-    setErrorDisplay(false)
-},
-  changeEmail:(e:ChangeEvent<HTMLInputElement>)=>{
-      setEmail(e.target.value)
-      setErrorDisplay(false)
-  },
-  changePassword:(e:ChangeEvent<HTMLInputElement>)=>{
-      setPassword(e.target.value)
-      setErrorDisplay(false)
-  }
+    const schema=yup.object({
+      name:yup.string().required(),
+      email:yup.string().email().required(),
+      password:yup.string().required()
+    }).required()
+
+    const {register,handleSubmit,formState:{errors}}=useForm<InputsType>({
+    resolver:yupResolver(schema)
+    })
+
+
+
+const SubmitForm=(data:InputsType)=>{
 
 }
 
-const clickSubmit=(e:any)=>{
-  e.preventDefault()
-  if(email ==='' && password == ''){
-      setErrorDisplay(true)
-      
-  }else{
-      navigate('/login')
-      setErrorDisplay(false)
-  }
- 
-}
 
 
     return <>
@@ -48,30 +46,30 @@ const clickSubmit=(e:any)=>{
         <S.Container>
           <S.ContainerDivision>
           <div className="cx-form">
-              <S.Form >
+              <S.Form onSubmit={handleSubmit(SubmitForm)}>
                 <h3>Cadastrar</h3>
                 <p>Preencha com seus dados para ir para o Login  : </p>
                 <div className="cx-inputs">
                     <input 
                       type="text" 
                       placeholder='Digite seu nome'
-                      value={nameUser} 
-                      onChange={actionsForm.changeNameUser}
+                     {...register('name')}
 
                     />
+                       <p className='msg-error'>{errors.name?.message}</p>
                     <input 
                        type="email" 
                        placeholder='Digite seu email'
-                       value={email} 
-                       onChange={actionsForm.changeEmail}
+                       {...register('email')}
                     />
+                       <p className='msg-error'>{errors.email?.message}</p>
                     <input 
                         type="password" 
                         placeholder='Digite uma senha'
-                        value={password} 
-                        onChange={actionsForm.changePassword} 
+                        {...register('password')}
                      />
-                  <input type="submit" className='submit' value='criar conta' onClick={clickSubmit}/>
+                        <p className='msg-error'>{errors.password?.message}</p>
+                  <input type="submit" className='submit' value='criar conta' />
                 </div>
                 {errorDisplay &&  <ErrorMensage  text='Todos os campos devem ser preenchidos'/> }
 

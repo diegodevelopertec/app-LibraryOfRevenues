@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container=styled.div`
 background-color: #c49c2d;
-
+min-height:100vh;
 `
 export const ContainerDivision=styled.div`
     display: flex;
@@ -37,10 +37,16 @@ display: flex;
 padding: 15px 5px;
 flex-wrap: wrap;
 .receitas{
+    margin-left:30px;
     flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
     width: 100%;
     padding: 18px 5px ;
+
+    @media screen and (max-width:750px){
+        grid-template-columns:repeat(2,1fr);
+        margin: 0;
+    }
 }
 `

@@ -4,60 +4,69 @@ import cozinheiraImage from '../../assets/imgs/cozinheiralogin.png'
 import { Link,useNavigate } from 'react-router-dom'
 import { ChangeEvent } from 'react'
 import { ErrorMensage } from '../../components/ErrorMensage/index'
+import { useForm, SubmitHandler } from "react-hook-form";
+import {yupResolver} from '@hookform/resolvers/yup'
+import * as yup from 'yup'
 
 
+type InputsType = {
+    email: string,
+    password: string,
+  };
 
 export const Login=()=>{
-    let [email,setEmail]=useState('')
-    let [password,setPassword]=useState('')
-    let [errorDisplay,setErrorDisplay]=useState(false)
 
-    const actionsForm={
-        changeEmail:(e:ChangeEvent<HTMLInputElement>)=>{
-            setEmail(e.target.value)
-            setErrorDisplay(false)
-        },
-        changePassword:(e:ChangeEvent<HTMLInputElement>)=>{
-            setPassword(e.target.value)
-            setErrorDisplay(false)
-        }
-    
-    }
+    let [errorDisplay,setErrorDisplay]=useState(false)
     const navigate=useNavigate()
+
+
+    const schema=yup.object({
+        email:yup.string().email().required(),
+        password:yup.string().required()
+    }).required()
+
+    const {register,handleSubmit,formState:{errors}}=useForm<InputsType>({
+      resolver:yupResolver(schema)
+    })
+
+
+
+  
+
+
     const clickSubmit=(e:any)=>{
         e.preventDefault()
-        if(email ==='' && password == ''){
-            setErrorDisplay(true)
-            
-        }else{
-            navigate('/receitas')
-            setErrorDisplay(false)
-        }
+      
        
     }
+
+
+
     return <>
     <S.ContainerLogin>
         <S.Container>
           <S.ContainerDivision>
           <div className="cx-form">
-              <S.Form >
+              <S.Form onSubmit={handleSubmit(clickSubmit)}  >
                 <h3>Login</h3>
                 <p>Preencha com seus dados para entrar : </p>
                 <div className="cx-inputs">
                     <input type="email" 
                        placeholder='Digite seu Email' 
-                       value={email} 
-                       onChange={actionsForm.changeEmail} 
+                       {...register("email")} 
+                      
                     />
+                    <p className='msg-error'>{errors.email?.message}</p>
                     <input type="password" 
                         placeholder='Digite sua senha' 
-                        name={password} 
-                        onChange={actionsForm.changePassword} 
+                        {...register("password")}
+                     
                     />
+                      <p className='msg-error'>{errors.password?.message}</p>
                     <input type="submit" 
                       className='submit' 
-                      value='Entrar' 
-                      onClick={clickSubmit}
+                        value={'Entrar'} 
+                      
                     />
                 </div>
                {errorDisplay &&  <ErrorMensage  text='Todos os campos devem ser preenchidos'/> }

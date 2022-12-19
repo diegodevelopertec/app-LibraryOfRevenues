@@ -7,8 +7,10 @@ export const ContainerRegistro=styled.div`
 background-color: #d9aa29;
 display: flex;
 justify-content: center;
+align-items: center;
 padding:100px 0 ;
-height: 100%;
+height: 100vh;
+
 `
 
 export const Container=styled.div`
@@ -22,7 +24,7 @@ display: flex;
 `
 
 export const ContainerDivision=styled.div`
-    height: 100%;
+   
     display: flex;
     width: 100%;
     
@@ -34,7 +36,7 @@ export const ContainerDivision=styled.div`
     justify-content: center;
     align-items: center;
     flex: 1;
- height: 100%;
+
     img{
         height: 300px;
     }
@@ -44,7 +46,7 @@ export const ContainerDivision=styled.div`
 @media screen and (max-width:950px){
     flex-direction: column;
     .cx-image{
-        order: 1;
+      
      
         img{
             display: none;
@@ -68,14 +70,17 @@ border-radius: 13px;
 padding: 70px 0;
 color: #a8a11e;
 box-shadow: 0 0 5px #eee;
+.msg-error{
+    margin:2px 0;
+}
 
-h3{
-    padding-left: 100px;
-    font-size: 25px;
-}
-p{
-    margin: 30px 12px;
-}
+    h3{
+        padding-left: 100px;
+        font-size: 25px;
+    }
+    p{
+        margin: 30px 12px;
+    }
 .cx-inputs{
     display: flex;
     flex-direction: column;

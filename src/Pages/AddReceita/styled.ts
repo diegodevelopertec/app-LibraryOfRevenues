@@ -2,11 +2,11 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-width: 100%;
-background-color: transparent;
-display: flex;
-justify-content:center;
-background-color: #c49c2d;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    background-color: #c49c2d;
     .container-form{
         padding:75px 15px;
         display: flex;
@@ -27,7 +27,7 @@ export const Form=styled.div`
 background-color: #363533;
 margin: 30px ;
 padding: 30px 35px;
-border-radius: 15px;
+border-radius: 5px;
 width: 60%;
 box-shadow:  0 0 10px #aaa;
 
